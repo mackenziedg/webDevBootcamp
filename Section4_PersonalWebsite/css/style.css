@@ -1,0 +1,42 @@
+body {
+    background-color: #ffc0cb;
+}
+
+.header-text {
+    font-family: Tangerine, cursive;
+    color: #09979b; 
+    font-size: 4em;
+     -moz-animation: header-bounce 3s linear infinite alternate;
+}
+
+p {
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-size: 1.5em;
+    text-align: center;
+    -moz-animation: p-color 0.25s linear infinite alternate;
+}
+
+@keyframes p-color{
+    from {color: #75d8d5;}
+    to {color: #09989b;}
+}
+
+.header-image {
+    display: inline-block;
+    width: 100%;
+}
+
+hr {
+    border-color: #1b4247;
+}
+
+@keyframes header-bounce {
+ 0%   { -moz-transform: translateX(30%); }
+ 100% { -moz-transform: translateX(0%); }
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}

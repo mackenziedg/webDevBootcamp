@@ -1,11 +1,47 @@
 <!DOCTYPE HTML>
-    <html>
-        <head>
-            <title>[Your Name]'s Personal Website</title>
-            <script type="text/javascript" src = "https://cdnjs.cloudflare.com/ajax/libs/d3/4.13.0/d3.js"></script>
-        </head>
-        <body>
-            <h1>Looking pretty boring here... wish I had some CSS</h1>
-            <p>D3 Has been loaded into this page from a CDN.</p>
-        </body>
-    </html>
+<html>
+    <head>
+        <title>Mac's Personal Website</title>
+        <script type="text/javascript" src = "https://cdnjs.cloudflare.com/ajax/libs/d3/4.13.0/d3.js"></script>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="./css/style.css"/>
+    </head>
+    <body>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-2"><img class="header-image" src="./img/spinning_globe.gif"></div>
+                <div class="col-md-8"><h1 class="header-text">Welcome to the World Wide Web!!!</h1></div>
+                <div class="col-md-2"><img class="header-image" src="./img/spinning_globe.gif"></div>
+            </div>
+
+            <hr/>
+
+            <div class="row">
+                <p> This is my website! </p>
+            </div>
+
+            <div class="row">
+                <div class="col-md-4"><img class="center" src="./img/billgates.gif"></div>
+                <div class="col-md-4"><img class="center" src="./img/billgates.gif"></div>
+                <div class="col-md-4"><img class="center" src="./img/billgates.gif"></div>
+            </div>
+        </div>
+
+    </body>
+
+    <script>
+        d3.select("body")
+        .append("p")
+        .text("I can use d3!!!");
+
+        d3.select("body")
+        .append("p")
+        .text("More d3!!!");
+
+        d3.select("body")
+        .append("p")
+        .text("Even more! Now it's three things with d3!!!");
+    </script>
+</html>
